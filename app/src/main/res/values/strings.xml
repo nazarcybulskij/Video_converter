@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">VideoConverter</string>
+    <string name="select_video">Select video to trim</string>
+    <string name="device_not_supported_message">FFmpeg is not supported on your device</string>
+    <string name="error">Error</string>
+    <string name="load_failed">FFMpeg failed to load</string>
+    <string name="exit">Exit</string>
+    <string name="cant_process_video">Can\'t process video</string>
+    <string name="another_command_is_running">Another command is already running</string>
+
+    <string name="facebook_app_id">1075523269161299</string>
+
+</resources>
