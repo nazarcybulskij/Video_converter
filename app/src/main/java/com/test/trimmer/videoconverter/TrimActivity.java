@@ -66,7 +66,6 @@ public class TrimActivity extends AppCompatActivity {
         mVideoView.setVideoURI(uri);
         mTrimBar.resetSelectedValues();
         mVideoView.seekTo(1);
-
         mTrimBar.setVisibility(View.VISIBLE);
         mTrimVideoButton.setVisibility(View.VISIBLE);
     }
