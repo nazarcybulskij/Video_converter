@@ -9,5 +9,8 @@
     <string name="another_command_is_running">Another command is already running</string>
 
     <string name="facebook_app_id">1075523269161299</string>
+    <string name="merge">Merge</string>
+    <string name="login_in_with_facebook">Login in with Facebook</string>
+    <string name="trim">Trim</string>
 
 </resources>

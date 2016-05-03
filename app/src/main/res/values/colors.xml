@@ -93,4 +93,5 @@
     <color name="draw_rect_border">#888888</color>
     <color name="color_chooser_unslected_border">#00000000</color>
     <color name="color_chooser_slected_border">#a7a7a7</color>
+    <color name="white">#FFFFFF</color>
 </resources>

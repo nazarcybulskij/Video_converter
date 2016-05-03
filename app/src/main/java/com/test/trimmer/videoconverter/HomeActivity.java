@@ -31,6 +31,13 @@ public class HomeActivity extends AppCompatActivity {
     }
   };
 
+  View.OnClickListener  onMergeListener= new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+      startActivity(new Intent(view.getContext(),MergeActivity.class));
+    }
+  };
+
   View.OnClickListener  onLoginFacebook= new View.OnClickListener() {
     @Override
     public void onClick(View view) {
@@ -78,6 +85,7 @@ public class HomeActivity extends AppCompatActivity {
   private void initListeners() {
     findViewById(R.id.trim).setOnClickListener(onTrimListener);
     findViewById(R.id.facebook_login).setOnClickListener(onLoginFacebook);
+    findViewById(R.id.merge).setOnClickListener(onMergeListener);
   }
 
   @Override

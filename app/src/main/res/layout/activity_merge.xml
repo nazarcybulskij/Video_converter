@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+  <LinearLayout
+    android:layout_weight="0.1"
+    android:id="@+id/button_cointainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+      android:id="@+id/button_one"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Select #1"
+      />
+
+
+    <Button
+      android:id="@+id/button_two"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="Select #2"
+      />
+
+
+  </LinearLayout>
+
+
+
+<LinearLayout
+  android:id="@+id/video_cointainer"
+  android:layout_below="@+id/button_cointainer"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_weight="0.7"
+  >
+
+
+  <VideoView
+    android:id="@+id/video_one"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@color/white"
+   />
+
+
+  <VideoView
+    android:id="@+id/video_two"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="@color/white"
+    />
+
+
+</LinearLayout>
+
+
+
+  <LinearLayout
+    android:id="@+id/text_cointainer"
+    android:layout_weight="0.1"
+    android:layout_below="@+id/video_cointainer"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+
+    <TextView
+      android:id="@+id/name_file_one"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      tools:text="default text"
+      />
+
+
+    <TextView
+      android:id="@+id/name_file_two"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      tools:text="default text"
+      />
+
+
+  </LinearLayout>
+
+  <Button
+    android:layout_below="@+id/text_cointainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.1"
+    android:text="@string/merge"
+    />
+
+
+
+
+
+
+</LinearLayout>

@@ -2,20 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:background="@color/white">
 
 
   <Button
     android:id="@+id/trim"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Trim"/>
+    android:text="@string/trim"/>
+
+  <Button
+    android:id="@+id/merge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/merge"/>
 
   <Button
     android:id="@+id/facebook_login"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Login  in with Facebook"/>
+    android:text="@string/login_in_with_facebook"/>
 
   <!--<com.facebook.login.widget.LoginButton-->
     <!--android:id="@+id/login_button"-->
