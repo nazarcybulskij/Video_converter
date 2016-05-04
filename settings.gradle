@@ -1,3 +1,2 @@
-include ':app', ':FFmpegAndroid',':mediachooserlibrary'
-project(':mediachooserlibrary').projectDir = new File('MediaChooser-library/app')
+include ':app', ':FFmpegAndroid'
 

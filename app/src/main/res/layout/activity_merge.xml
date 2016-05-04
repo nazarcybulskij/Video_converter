@@ -40,7 +40,7 @@
   android:id="@+id/video_cointainer"
   android:layout_below="@+id/button_cointainer"
   android:layout_width="wrap_content"
-  android:layout_height="wrap_content"
+  android:layout_height="500dp"
   android:layout_weight="0.7"
   >
 
@@ -80,6 +80,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"
+      android:paddingRight="16dp"
       tools:text="default text"
       />
 
@@ -89,6 +90,7 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_weight="1"
+      android:paddingRight="16dp"
       tools:text="default text"
       />
 
