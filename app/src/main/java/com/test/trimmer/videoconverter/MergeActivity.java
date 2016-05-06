@@ -1,5 +1,6 @@
 package com.test.trimmer.videoconverter;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import org.florescu.android.rangeseekbar.RangeSeekBar;
+
+import java.io.File;
 
 /**
  * Created by nazarko on 5/3/16.
@@ -24,7 +27,7 @@ public class MergeActivity extends AppCompatActivity {
   View.OnClickListener onMergeListener = new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-      Toast.makeText(MergeActivity.this,"Merge",Toast.LENGTH_SHORT).show();
+      FfmpegUtils.concatVideo(MergeActivity.this,nameFiles[0],nameFiles[1],mCallback);
     }
   };
 
@@ -102,9 +105,26 @@ public class MergeActivity extends AppCompatActivity {
   private  void setVideo(Uri uri,VideoView videoView) {
       videoView.setVideoURI(uri);
       videoView.seekTo(1);
-
-
   }
+
+  private final FfmpegUtils.Callback mCallback = new FfmpegUtils.Callback() {
+    @Override
+    public void finished(String file) {
+      //mLoading.setVisibility(View.GONE);
+      Intent intent = new Intent(Intent.ACTION_VIEW);
+      intent.setDataAndType(Uri.fromFile(new File(file)), "video/*");
+      startActivity(intent);
+    }
+
+    @Override
+    public void error() {
+      //mLoading.setVisibility(View.GONE);
+      new AlertDialog.Builder(MergeActivity.this)
+          .setTitle(R.string.error)
+          .setMessage(R.string.cant_process_video)
+          .show();
+    }
+  };
 
 
 

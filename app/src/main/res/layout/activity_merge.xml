@@ -72,6 +72,8 @@
     android:layout_weight="0.1"
     android:layout_below="@+id/video_cointainer"
     android:layout_width="match_parent"
+    android:gravity="top"
+    android:layout_gravity="top"
     android:layout_height="60dp">
 
 
@@ -81,6 +83,8 @@
       android:layout_height="wrap_content"
       android:layout_weight="1"
       android:paddingRight="16dp"
+      android:gravity="top"
+      android:layout_gravity="top"
       tools:text="default text"
       />
 
@@ -91,6 +95,8 @@
       android:layout_height="wrap_content"
       android:layout_weight="1"
       android:paddingRight="16dp"
+      android:gravity="top"
+      android:layout_gravity="top"
       tools:text="default text"
       />
 
